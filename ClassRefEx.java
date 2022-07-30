@@ -14,6 +14,14 @@ public class ClassRefEx {
 		return ma.matches();
 	}
 	
+	public static boolean lastname(String lastname) {
+		String regex = "[A-Z]{1}[a-z]{3,6}";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher ma = pattern.matcher(lastname);
+		System.out.println("The given last name is : " +lastname + "->" + ma.matches());
+		return ma.matches();
+	}
+	
 }
 
 
