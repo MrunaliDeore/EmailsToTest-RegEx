@@ -34,4 +34,11 @@ public class ClassRegExTest {
 		boolean result = ur.mobile("9178894556");
 		Assert.assertEquals(true, result);
 	}
+	
+	@Test
+	public void password() {
+		ClassRefEx ur = new ClassRefEx();
+		boolean result = ur.password("mrunalie");
+		Assert.assertEquals(true, result);
+	}
 }
