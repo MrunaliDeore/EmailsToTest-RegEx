@@ -27,4 +27,11 @@ public class ClassRegExTest {
 		boolean result = ur.email("mrunali@bl.co.in");
 		Assert.assertEquals(true, result);
 	}
+	
+	@Test
+	public void mobile() {
+		ClassRefEx ur = new ClassRefEx();
+		boolean result = ur.mobile("9178894556");
+		Assert.assertEquals(true, result);
+	}
 }

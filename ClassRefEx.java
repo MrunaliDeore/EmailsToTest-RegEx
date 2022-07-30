@@ -30,6 +30,13 @@ public class ClassRefEx {
 		return ma.matches();
 	}
 	
+	public static boolean mobile(String mobile) {
+		String regex = "(91)?[7-9][0-9]{9}";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher ma = pattern.matcher(mobile);
+		System.out.println("The given mobile is : " +mobile + "->" + ma.matches());
+		return ma.matches();
+	}
 }
 
 
