@@ -17,8 +17,14 @@ public class ClassRegExTest {
 	@Test
 	public void lastnameTest() {
 		ClassRefEx ur = new ClassRefEx();
-		boolean result = ur.firstname("Deore");
+		boolean result = ur.lastname("Deore");
 		Assert.assertEquals(true, result);
 	}
-
+	
+	@Test
+	public void email() {
+		ClassRefEx ur = new ClassRefEx();
+		boolean result = ur.email("mrunali@bl.co.in");
+		Assert.assertEquals(true, result);
+	}
 }
