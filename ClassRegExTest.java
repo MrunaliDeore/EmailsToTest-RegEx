@@ -38,7 +38,7 @@ public class ClassRegExTest {
 	@Test
 	public void password() {
 		ClassRefEx ur = new ClassRefEx();
-		boolean result = ur.password("mrunAlie");
+		boolean result = ur.password("mrunAliy7");
 		Assert.assertEquals(true, result);
 	}
 }

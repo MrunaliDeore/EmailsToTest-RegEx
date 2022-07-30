@@ -39,7 +39,7 @@ public class ClassRefEx {
 	}
 	
 	public static boolean password(String password) {
-		String regex = "^[A-za-z]{8}";
+		String regex = "^[A-za-z]{8}[0-9]{1}";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher ma = pattern.matcher(password);
 		System.out.println("The given password is : " +password + "->" + ma.matches());
